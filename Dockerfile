@@ -1,7 +1,6 @@
-FROM --platform=${TARGETPLATFORM} alpine:latest
-LABEL maintainer="V2Fly Community <dev@v2fly.org>"
+FROM --platform=latest alpine:latest
 
-WORKDIR /tmp
+WORKDIR /app
 ARG TARGETPLATFORM
 ARG TAG
 COPY v2ray.sh "${WORKDIR}"/v2ray.sh
